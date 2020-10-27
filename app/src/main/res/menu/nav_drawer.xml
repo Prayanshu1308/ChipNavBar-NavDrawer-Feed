@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Heading 1">
+
+        <menu>
+            <item
+                android:id="@+id/opt_1"
+                android:title="Option 1"
+                app:cnb_iconColor="#1a66d2"
+                />
+            <item
+                android:id="@+id/opt_2"
+                android:title="Option 2"
+                app:cnb_iconColor="#f6830f"
+                />
+            <item
+                android:id="@+id/opt_3"
+                android:title="Option 3"
+                app:cnb_iconColor="#7ea04d"
+                />
+        </menu>
+    </item>
+
+    <item android:title="Heading 2">
+
+        <menu>
+            <item
+                android:id="@+id/opt_4"
+                android:title="Option 4"
+                app:cnb_iconColor="#1a66d2"
+                />
+            <item
+                android:id="@+id/opt_5"
+                android:title="Option 5"
+                app:cnb_iconColor="#f6830f"
+                />
+        </menu>
+    </item>
+
+</menu>
