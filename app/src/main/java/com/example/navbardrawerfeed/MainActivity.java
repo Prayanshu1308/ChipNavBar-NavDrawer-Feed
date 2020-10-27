@@ -42,13 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         chipNavigationBar.setItemSelected(R.id.home, true);
 
-        if(chipNavigationBar.getSelectedItemId()==R.id.home)
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-        else if(chipNavigationBar.getSelectedItemId()==R.id.event)
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new EventsFragment()).commit();
-        else
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MeFragment()).commit();
-
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
 
         BottomMenu(); //for handling clicks on chipNavigationBar
 
