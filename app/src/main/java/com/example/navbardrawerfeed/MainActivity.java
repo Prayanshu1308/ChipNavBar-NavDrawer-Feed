@@ -1,5 +1,6 @@
 package com.example.navbardrawerfeed;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -42,15 +43,13 @@ public class MainActivity extends AppCompatActivity {
 
         chipNavigationBar.setItemSelected(R.id.home, true);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-
         BottomMenu(); //for handling clicks on chipNavigationBar
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
 
     }
 
-
-
-    private void BottomMenu() {
+    private void BottomMenu(){
 
         chipNavigationBar.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
             @Override
